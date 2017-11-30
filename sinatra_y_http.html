@@ -1,0 +1,156 @@
+Los verbos mas usados en https
+get, post, put, delete
+
+Los codigos de respuesta https://http.cat/
+
+Sinatra: es una gema de ruby para poder comunicarse con el servidor,
+ el archivo sinatra.rb inicia con require 'sinatra', este archvo va por ejp con
+ las peticiones, get, post, etc como bloques y por dentro el cuerpo de la respuesta, ejp
+
+  get '/' do
+  "respuesta"
+  end
+
+portocolo mas domain es el socket
+
+ERB es el motor templating de ruby
+
+get '/onix' do
+erb :onix => este archivo lo busca en el path donde estemos parados en una carpeta que debemos
+              tener que se llame views y debe llevar por extension erb, onix.erb
+end
+
+shotgun se usa para estar reiniciando el servidor de manera facil por ruby (para pruebas)
+
+
+en el archivo .erb trabajo html con ruby
+<% aca va codigo ruby que no se muestra %>
+<%= aca va el codigo que si se ejecuta =%>
+
+
+cuando en un path va :id quiere decir que le estoy dando un avariable para que cambie el path
+
+
+en params entran los input de un formulario, el valor de la variable del path :id por ejp y lo que vaya despues
+del query que es el ?
+
+request es la peticion del usuario o cliente
+
+patron mbc =>  el controlador controla el flujo de la app, el flujo consiste en el cliente hace una peticion
+el rack la transforma, el controlador la busca en el modelo, el modelo en la base de datos, el
+modelo le responde al controlador, el controlador le pasa la info a views para que la transforme en html
+el controlador la vuelve a recibir, la envia al rack y se la da al cliente en http
+
+
+config.ru es el que levanta el servidor cuando usamos rack rackup config.ru => para levantar el servidor
+o se puede un shotgun que es la gema
+
+en la carpeta public van los archivos que son estaticos, que no son dinamicos, en la carpeta spec
+va toda la configuracion
+
+
+Las paginas web son crud, vamos a crear una aplicacion de perros, donde se aplique el concepto
+  1. loc controladores manejan las rutas, alli vamos a mapear, pueden haber muchos controladores
+     2 se crea la base de datos
+     3 se crea la tabla perros
+     4 se le crean perros
+     REST  y SOAP es una forma para orgaizar las rutas de los CRUD, el mas usado e REST
+     5 segun rest la ruta es igual al verbo + el path como get '/dogs/:id'
+
+bundle install
+rake db:create
+rake generate:migration NAME=create_notes
+bundle exec rake generate:model NAME=note
+rake db:migrate
+bundle exec rake db:seed
+se debe correr una migracion luego de haber modificado el archivo de migration que se genero
+
+en atom existe Add 'softWrap':true to the 'editor' section like this:
+
+'editor':
+  'softWrap': true
+I hope that helps. smile
+
+esto es para dividir una linea
+
+creo la tabla que voy a asociar aa la tabla ya creada, luego hago las mugraciones y le adhiero Las
+llaves foraneas a la tabla creada en un principio
+luego creo los sedds
+luego hago las asociasiones
+
+luego comienzo el CRUD
+se crea un nuevo control para la tabla nueva
+
+get "/teachers" do
+@teachers = Teacher.all
+erb :"teachers/index"
+end
+
+el bloque anterior me muestra a todos en index, debo crear el index.erb en una
+carpeta nueva que va a llevar el nombre de teachers en views
+
+get '/tecahers/:id' do
+@teachers = Teacher.find(params[:id])
+erb :"teachers/show"
+end
+
+get '/owbers/:id/dogs/new'
+@owner = owner.find(params[:id])
+erb :"/dogs/new"
+end
+
+con este bloque cambio la ruta en dogs para nestearla y esto permite que no se creen perros
+sin dueños
+
+para evitar estar llamando varias llaves de params cuando en un formulario se ingresan varios entonces
+en name="dog[name]" o name="dog[age]", esto hace que en el controller solo pueda llamar
+a params[:dog]
+
+recursos nesteados
+
+
+
+Clase 15 de nov Autenticacion
+Authentication
+cookies
+sessions
+
+se utilizan hashins algorithms para encripar el password el estandar es BCrypt
+
+cuando se crea el espacio de password nunca se le coloca solo password, se le debe llamar
+por ejp hashed_password, para que no se rompa el params creamos algo que se llamaratributos virtuales
+con esto cambiamos el nombre que llega inicialmente de password por hashed_password, cuando llega el password
+el llama el metodo que creo en el modelo con Class User.
+
+Las cookies guardan el estado del request debido a que http no guarda el estado, las cookies viven en el
+navegador, esto permite seguir logeado, estar logeado traduce en que las cookies estan enviando todo el tiempo
+la informacion de quien esta usando
+
+
+
+
+En el layout lo diferente es un if que permite mostrarle al usuario un boton de deslogearse, o un boton de logearse dependiendo el asociasiones
+
+en el modelo del usuario agrego el metodo para encriptar el password y asociar con hashed_password
+
+
+los helpers se usan el los controladores y en las vistas, este es el que trae la cookie encambio del id_user para
+saber que tiene la sesion iniciada, en el caso de la sesion el metodo es current_user
+
+
+
+
+
+
+DOM es el arbol de html, se manejan las jerarquias como head => meta.
+
+atraves de la variable document java juega con el DOM de html
+
+var buttonTag = document.getElementsByTagName('button') en este ejemplo JS llama a todos los elementos que sean botones y los acumula en la variable que creamos
+
+queryselector es la forma de seleccionar mass facil los botoes por ejp
+
+se puede escribir JQuery o se escirbe $ y es lo mismo para decir que voy a trabajar JQuery
+
+lo mas relevante de jquery son los eventos, como por ejp click
+addEventListener recibe como primer argumento el evento que quiero capturar, luego sigue la funcion de JS que es la que se va a ejecutar cuando suceda el evento

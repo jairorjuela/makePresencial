@@ -1,0 +1,855 @@
+<!-- Saludando
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    ¡Hola <b>HTML</b>!
+  </body>
+</html>
+-->
+<!-- negritas y titulo
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <h1>Este es el título</h1>
+
+    <p>Este es el primer <strong>párrafo</strong>.</p>
+
+    <p>Este es el segundo <strong>párrafo</strong>.</p>
+  </body>
+</html> -->
+<!-- Link y titulo
+<!DOCTYPE html>
+<html>
+  <head> <title> titulos de pagina</title> </head>
+    <body>
+      <h1>HTML y CSS</h1>
+
+      <p>Para hacer páginas Web necesitas aprender dos lenguajes:
+      HTML y CSS. Estos son los lenguajes que los navegadores
+      (Firefox, Chrome, Internet Explorer) entienden e interpretan
+      para mostrarte lo que ves cuando abres alguna página.</p>
+
+      <a href="https://blog.makeitreal.camp/html-css/">Ver más</a>
+    </body>
+</html> -->
+<!-- pagina con vinculo
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mis Recetas</title>
+  </head>
+  <body>
+    <h1>Receta: Ensalada</h1>
+    <img src="https://s3.amazonaws.com/makeitreal/salad.png" alt="Ensalada">
+    <h2>Ingredientes</h2>
+    <p>Los ingredientes necesarios para preparar la ensalada son los siguientes:</p>
+    <ul>
+      <li>Pechuga</li>
+      <li>Lechuga</li>
+      <li>Tomate</li>
+      <li>Cebolla</li>
+      <li>Maiz</li>
+    </ul>
+
+    <h2>Preparación</h2>
+    <p>Se pican todos los ingredientes, se mezclan y listo!</p>
+  </body>
+</html> -->
+<!-- Teclado
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .dial td {
+      background: #303030;
+      color: white;
+      font-size: 24px;
+      padding: 10px 23px;
+    }
+  </style>
+</head>
+<body>
+  <table class="dial">
+    <tr>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>5</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>0</td>
+      <td> </td>
+    </tr>
+  </table>
+</body>
+</html> -->
+<!-- Tablas
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Libreta de Contactos</title>
+    <style>
+    table{
+        width:100%;
+        }
+        table, td, th {
+          border: 1px solid black;
+        }
+    </style>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <th>Nombre</th>
+        <th>Teléfono</th>
+        <th>Dirección</th>
+        <th>Email</th>
+        <th>Empresa</th>
+      </tr>
+      <tr>
+        <td>Germán Escobar</td>
+        <td>312111111</td>
+        <td>Cll 34 # 5c -34 Apto 1001</td>
+        <td>german.escobarc@gmail.com</td>
+        <td>La Nueva Educación</td>
+      </tr>
+      <tr>
+        <td>Pedro Perez</td>
+        <td>324555555</td>
+        <td>Av Poblado #8a - 34 Apto 507</td>
+        <td>pedro.perez@gmail.com</td>
+        <td>Educación Colombia</td>
+      </tr>
+    </table>
+  </body>
+</html> -->
+<!-- div con propiedades
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      a { color: #F04500; }
+      .article {
+        background: #303030; color:#dfdfdf;
+        font-family: 'Helvetica Neue', Arial, sans-serif;
+        font-size: 18px; padding: 20px; margin: 40px; border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="article">
+      <h1>Scrum</h1>
+      <p>En los 80's y gran parte de los 90's se pensaba que
+        construir software era como construir un edificio o un
+        puente; que era posible planear todo primero, y luego,
+        escribir el código sería como pegar ladrillos con cemento.
+        A esa metodología se le llama <strong>en cascada</strong>
+        (waterfall) y generó inmensas pérdidas para las empresas
+        que la adoptaron.</p>
+
+      <p>La realidad es que las aplicaciones están en constante
+        evolución y siempre hay cambios inesperados sobre el camino.
+        <a href="http://es.wikipedia.org/wiki/Scrum" target="_blank">Scrum</a>
+        es una metodología de desarrollo ágil para proyectos
+        de software que adopta esa filosofía. En vez de construir
+        software en cascada, se construye en varias iteraciones
+        cortas de forma incremental.</p>
+    </div>
+  </body>
+</html> -->
+<!-- envio de formulario, Existen dos formas de enviar la información que se
+controla con el atributo method. Los posibles valores son get(por defecto) y post.(recomendado)
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      body { text-align: center; }
+      input, button { font-size: 18px; }
+    </style>
+  </head>
+  <body>
+    <form action="/forms/hello">
+      <h1> ¿Cómo te llamas?</h1>
+        <br>
+        <input type="text" name="nombre">
+        <button type="submit" onclick="alert('¡Hola!')">¡Hola!</button>
+    </form>
+  </body>
+</html> -->
+
+<!-- ingresando CSS como link
+!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>El efecto del colegio en la creatividad</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+</body>
+</html>    https://www.makeitreal.camp/solutions/17307/preview/index.html   -->
+
+<!-- Para realizar el Responsive Design lo más recomendable es tener un container
+en CSS con eso facilira la edicion
+<meta name="viewport" content="width=device-width, user-scalable=no,
+initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0"> se utiliza para que el
+usuario en un dispositivo no pueda hacer zoom y eso facilite el responive, el tamaño de
+un contenedor es mejor dejarlo en pocentaje y no en px, aca un ejemplo para redimensionar
+la fuente y el tamaño del fondo
+@media (min-width: 768px) {
+  .container {
+    width: 768px;
+    font-size: 16px;
+  }
+}
+esto se llama media query y hace parte importante del responsive design
+
+con el atributo list-style:none; se quitan las viñetas
+img {
+  width: 600px;
+  display: block;
+  margin: auto;
+} aca se centro una imagen y se le cambio su tamaño
+
+-->
+<!-- manejando div http://learnlayout.com/float-layout.html, http://learnlayout.com/inline-block-layout.html
+https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cuadrados</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, minimun-scale=1.0">
+  </head>
+  <body>
+    <div class="cuadrado_impar"></div>
+    <div class="cuadrado_par"></div>
+    <div class="cuadrado_impar"></div>
+    <div class="cuadrado_par"></div>
+
+    <div class="cuadrado_impar"></div>
+    <div class="cuadrado_par"></div>
+    <div class="cuadrado_impar"></div>
+    <div class="cuadrado_par"></div>
+
+    <div class="cuadrado_impar"></div>
+    <div class="cuadrado_par"></div>
+    <div class="cuadrado_impar"></div>
+    <div class="cuadrado_par"></div>
+
+    <div class="cuadrado_impar"></div>
+    <div class="cuadrado_par"></div>
+    <div class="cuadrado_impar"></div>
+    <div class="cuadrado_par"></div>
+
+    <div class="cuadrado_impar"></div>
+    <div class="cuadrado_par"></div>
+    <div class="cuadrado_impar"></div>
+    <div class="cuadrado_par"></div>
+
+      <style type="text/css">
+        .cuadrado_impar {
+          background: red;
+          border-color: black;
+          border-style:solid;
+          border-width:1px;
+          width:100px;
+          height:100px;
+          margin: 10px;
+          display: inline-block;
+        }
+      </style>
+
+      <style type="text/css">
+        .cuadrado_par {
+          background: blue;
+          border-color: black;
+          border-style:solid;
+          border-width:1px;
+          width:100px;
+          height:100px;
+          margin: 10px;
+          display: inline-block;
+        }
+      </style>
+  </body>
+</html> -->
+
+
+<!-- body
+{
+  background-color: #E6E6FA;
+  margin: auto;
+  background: url(https://i.imgur.com/86NIrPC.jpg?2);
+  background-position: center center; /*la imagen siempre se centra
+  background-repeat: no-repeat;/*la imagen no queda como mosaico
+  background-size: cover;/*la imagen de fondo cambia de escala según el tamaño del contenedor
+} -->
+
+<!--BOOSTRAP
+
+para usa boostrap sin instalar primero debemos copiar este vinculo en el head
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+este lo sacamos de la pagina https://getbootstrap.com/docs/3.3/getting-started/
+luego, copiamos el jquery para que funcione java
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+este lo sacamos de https://developers.google.com/speed/libraries/#jquery
+luego copiamos el otro link de bootstrap
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+este contiene el java
+Esta pagina facilita la busqueda de iconos https://glyphicons.bootstrapcheatsheets.com/
+
+-->
+<!-- Usando bootstrap3
+<!DOCTYPE html>
+  <html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="jumbotron">
+       <h1>¡Hola, mundo!</h1>
+        <p>Esta es mi primera aplicación utilizando Bootstrap 3</p>
+      </div>
+    </div>
+  </body>
+  </html>
+
+Con bootstrap se puede dar una alineacion a los parrafos asi <p class="text-left">Left aligned text.</p> -->
+<!-- iconos bootstrap
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.<meta charset="utf-8">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="container">
+    <img src="https://s3.amazonaws.com/makeitreal/challenges/bootstrap/player-background" width=70%>
+  </div>
+  <div class="container">
+  <button type="button" class="btn btn-default btn-lg" aria-label="bottom Align">
+  <span class="glyphicon glyphicon-step-backward" aria-hidden="true"></span>
+  </button>
+  <button type="button" class="btn btn-default btn-lg" aria-label="bottom Align">
+  <span class="glyphicon glyphicon-fast-backward" aria-hidden="true"></span>
+  </button>
+  <button type="button" class="btn btn-default btn-lg" aria-label="bottom Align">
+  <span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+  </button>
+  <button type="button" class="btn btn-default btn-lg" aria-label="bottom Align">
+  <span class="glyphicon glyphicon-pause" aria-hidden="true"></span>
+  </button>
+  <button type="button" class="btn btn-default btn-lg" aria-label="bottom Align">
+  <span class="glyphicon glyphicon-stop" aria-hidden="true"></span>
+  </button>
+  <button type="button" class="btn btn-default btn-lg" aria-label="bottom Align">
+  <span class="glyphicon glyphicon-fast-forward" aria-hidden="true"></span>
+  </button>
+  <button type="button" class="btn btn-default btn-lg" aria-label="bottom Align">
+  <span class="glyphicon glyphicon-step-forward" aria-hidden="true"></span>
+  </button>
+  </div>
+</body>
+</html>   -->
+
+
+<!-- Formularios -->
+
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"> -->
+    <!-- codigo para dropdown de pais-->
+    <!-- <script src="js/jquery/jquery-1.8.2.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/msdropdown/dd.css">
+    <script src="js/msdropdown/jquery.dd.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/msdropdown/flags.css"> -->
+
+    <!-- Bootstrap -->
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="dist/geodatasource-cr.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h1>Registro</h1> -->
+
+        <!-- Aquí tu solución -->
+        <!-- Email y contraseña  -->
+        <!-- <form class="form-horizontal">
+          <div class="form-group">
+            <h4 class="col-md-12 col-md">Email</h4>
+            <label for="inputEmail3" class="col-md-6 col-md-offset-3"></label>
+            <div class="col-sm-10">
+              <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            </div>
+          </div>
+          <div class="form-group">
+            <h3 class="col-md-12 col-md">Contraseña</h3>
+            <label for="inputPassword3" class="col-md-6 col-md-offset-3"></label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <h3 class="col-md-12 col-md">Confirmar Contraseña</h3>
+            <label for="inputPassword3" class="col-md-6 col-md-offset-3"></label>
+            <div class="col-sm-10">
+              <input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+            </div>
+          </div> -->
+        <!--</form>-->
+
+
+          <!-- paises-->
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-3"> -->
+          <!--<form class="form-horizontal">-->
+            <!-- <div class="form-group">
+              <h3 class="col-md-12 col-md">País</h3>
+              <div class="col-md-10">
+                <select name="countries" id="countries" style="width:300px;">
+                  <option value='ad' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ad" data-title="Andorra">Andorra</option>
+                  <option value='ae' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ae" data-title="United Arab Emirates">United Arab Emirates</option>
+                  <option value='af' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag af" data-title="Afghanistan">Afghanistan</option>
+                  <option value='ag' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ag" data-title="Antigua and Barbuda">Antigua and Barbuda</option>
+                  <option value='ai' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag ai" data-title="Anguilla">Anguilla</option>
+                  <option value='al' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag al" data-title="Albania">Albania</option>
+                  <option value='am' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag am" data-title="Armenia">Armenia</option>
+                  <option value='an' data-image="images/msdropdown/icons/blank.gif" data-imagecss="flag an" data-title="Netherlands Antilles">Netherlands Antilles</option>
+                </select>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- <input type="checkbox" class="form-check-input"> -->
+    <!-- <div class="container">
+      <div class="col-md-4 col-md-offset-3">
+        <div class="checkbox">
+          <label class="form-check-label">
+            <input type="checkbox" class="checkbox" value="Recordarme">
+            Recordarme
+          </label>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- Boton submit -->
+    <!-- <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-md-offset-3">
+          <div class="form-group">
+            <div class="col-md-12 col-md">
+              <button type="submit" class="btn btn-default">Registrarme</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+      </form>
+  </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+</head>
+<body>
+<!-- Aquí tu solución -->
+<h1>Vuelos</h1>
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Aerolínea</th>
+      <th scope="col">Vuelo</th>
+      <th scope="col">Destino</th>
+      <th scope="col">Hora de Salida</th>
+      <th scope="col">Estado</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td scope="row">Make it Flight</td>
+      <td>MIF123</td>
+      <td>Buenos Aires</td>
+      <td>21:20</td>
+      <td class="bg-success">A tiempo</span></td>
+    </tr>
+    <tr>
+      <td scope="row">Ruby on Wings</td>
+      <td>ROW678</td>
+      <td>Bogota</td>
+      <td>20:20</td>
+      <td class="bg-danger"><span class="label label-danger">Retrasado</span></td>
+    </tr>
+    <tr>
+      <td scope="row">W3 Airlines</td>
+      <td>WWW789</td>
+      <td>Madrid</td>
+      <td>22:40</td>
+      <td class="bg-success"><span class="label label-success">A tiempo</span></td>
+    </tr>
+    <tr>
+      <td scope="row">Make it Flight</td>
+      <td>MIF789</td>
+      <td>Medellín</td>
+      <td>19:40</td>
+      <td class="bg-warning"><span class="label label-warning">Partió</span></td>
+    </tr>
+  </tbody>
+</table>
+
+
+</body>
+</html>
+
+<!--  estados de alerta
+<div class="container">
+  <h2>Contextual Label Classes</h2>
+  <p>Contextual classes can be used to color the label.</p>
+  <span class="label label-default">Default Label</span>
+  <span class="label label-primary">Primary Label</span>
+  <span class="label label-success">Success Label</span>
+  <span class="label label-info">Info Label</span>
+  <span class="label label-warning">Warning Label</span>
+  <span class="label label-danger">Danger Label</span>
+</div>
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- g -->

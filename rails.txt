@@ -1,0 +1,15 @@
+toda aplicacion se crea con new
+rails new jairoapp
+
+en rails se manejan "manifiestos", no se tocan, lo recomendable es no mdificarlos, hay de css y js, si quisiera por ejp colcoar una fuente para todo el documento entonces lo hago en el manifiesto de css pero no es tan recomendable, los archivos css lo mejor es dejarlos con extension scss que es la combinacion de saas con css
+
+siempre que se hagan cambios en el config es mejor reiniciar el servidor
+
+se debe contratar un servicio de log https://papertrailapp.com/ y un servicio de host el servicio de log es el que guarda el historial de la aplicaion y permite saber el porque se toteo
+
+podemos iniciar creando el controlador
+rails generate  controller dogs
+
+luego si quiero crear el modelo y de paso la tabla con la asociacion de una entonces hago
+
+rails generate model dog name:string age:integer owner:belongs_to

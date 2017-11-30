@@ -1,0 +1,14 @@
+tener el control de refresh con .preventDefault(), sin pasarle agrumentos
+$(document).ready(function(){
+
+selecciono con jquery, luego por ejo on("click", function(event){
+event.preventDefault()
+})
+
+})
+
+
+
+para hacer el request inicio con $.ajax({ y aca creo un objeto sinple }), va con
+
+var nombredevariable = $.ajax()

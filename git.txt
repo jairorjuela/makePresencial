@@ -1,0 +1,48 @@
+Git init es el comando que le da la propiedad de repositorio a una carpeta que queramos elegir para repo.
+Con el comando git add se adhiere un archivo al index /Staging de Git
+Existen tres estados en GIT lo cuales muestra el comando status:
+working Directory : La carpeta donde se trabaja (repo)
+Index/Staging: Le indica a Git que le haga seguimiento a un archivo
+Commit: Cuando se guarda en el historial, El comando siempre tiene un comentario git commit -m”comentario”
+
+El comando git log nos muestra los cambios que se han hecho con los respectivos comentarios
+
+con el comando git branch crea una rama, git branch nombrederama
+El comando git checkout cambia de rama para trabajar en la rama que cree
+git checkout -b nombrederama
+git branch -d nombre de rama elimina la rama
+con mv cambio el nombre de la carpeta
+git remote sube por consola los cambios a GITHUB
+git push sube cambios a GITHUB
+git push nombre de repo nombre de rama, usualmente su sintaxis es
+
+git push -u origin master donde reemplazo master por la rama a la que quiero enviar mis cambios
+git fetch trae los cambios de GITHUB a nuestro git local
+git merge une o combina las ramas
+git pull es un comando que une el fetch y el merge en no solo
+git clone url que quiero clonar
+FORK es un elemento de GITHUB para descargar un repo de otra persona y subirlo a mi perfil de Git
+con git remote add upstream url repo original (este comando conecta con el remoto original del repo)
+Cuando colaboramos con alguien y este hace un pull request, luego de aprobrarlo debemos
+hacer un merge pull request desde la pagina de git para agregar los cambios al master
+para crear una nueva etiqueta se usa git tag nombredeltag
+para subirla se usa git push origin --tags
+
+Reto: git log luego git commit --amend -m luego git push origin master -f la -f es para forzar
+para forzar a borrar un commit se utiliza git reset --hard HEAD~1 y borra el ultimo
+
+1. clono el repositorio de leo, git clone urldeleo
+2. luego voy a students-make-it-real
+3.en pages creo mi pagina
+4. git add
+5. git commit
+6. git push
+cuando quiero hacer un proyecto en html creo una rama que se llame gh-pages
+
+
+cuando quiero que git ignore un archivo creo un archivo oculto que se llame .git ignore
+--y por dentro escribo el path del archivo a ingnorar
+
+https://www.youtube.com/watch?v=p7o9vrd8qe8
+
+https://help.github.com/articles/ignoring-files/
